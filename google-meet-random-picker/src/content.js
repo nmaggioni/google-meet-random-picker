@@ -1,6 +1,7 @@
 /* src/content.js */
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {Icon} from './components/icon'
 import "./content.css";
 
 /*global chrome*/
@@ -8,7 +9,7 @@ class Main extends React.Component {
     render() {
         return (
             <div className={'my-extension'}>
-                <h1>Hello world - My first Extension</h1>
+                <Icon />
             </div>
         )
     }
@@ -19,7 +20,6 @@ app.id = "my-extension-root";
 document.body.appendChild(app);
 ReactDOM.render(<Main />, app);
 
-app.style.display = "none";
 chrome.runtime.onMessage.addListener(
    function(request, sender, sendResponse) {
       if( request.message === "clicked_browser_action") {
