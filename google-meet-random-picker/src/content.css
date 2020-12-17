@@ -5,3 +5,14 @@
  .my-extension h1 {
      color: #000;
  }
+
+ .message-container {
+     z-index: 999;
+ }
+
+ #my-extension-root {
+     top: 0px;
+     left: 0px;
+     z-index: 999;
+     position:fixed;
+ }
