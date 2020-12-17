@@ -1,0 +1,23 @@
+{
+  "files": {
+    "app.css": "/static/css/app.css",
+    "app.js": "/static/js/app.js",
+    "app.js.map": "/static/js/app.js.map",
+    "background.js": "/static/js/background.js",
+    "background.js.map": "/static/js/background.js.map",
+    "content.css": "/static/css/content.css",
+    "content.js": "/static/js/content.js",
+    "content.js.map": "/static/js/content.js.map",
+    "popup.hml": "/popup.hml",
+    "precache-manifest.ac80504eccf0788424599fd3040cf96f.js": "/precache-manifest.ac80504eccf0788424599fd3040cf96f.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/app.css.map": "/static/css/app.css.map",
+    "static/css/content.css.map": "/static/css/content.css.map",
+    "static/js/app.js.LICENSE.txt": "/static/js/app.js.LICENSE.txt",
+    "static/js/content.js.LICENSE.txt": "/static/js/content.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/css/app.css",
+    "static/js/app.js"
+  ]
+}
