@@ -4,15 +4,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/popup.hml"
   },
   {
-    "revision": "316bcfc233d4fec7c225",
+    "revision": "e5d918e18bca7fdeea10",
     "url": "/static/css/app.css"
   },
   {
-    "revision": "1bffb345652b246e111a",
+    "revision": "cd3c06ef7da4dc2c2cc3",
     "url": "/static/css/content.css"
   },
   {
-    "revision": "316bcfc233d4fec7c225",
+    "revision": "e5d918e18bca7fdeea10",
     "url": "/static/js/app.js"
   },
   {
@@ -24,7 +24,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/background.js"
   },
   {
-    "revision": "1bffb345652b246e111a",
+    "revision": "cd3c06ef7da4dc2c2cc3",
     "url": "/static/js/content.js"
   },
   {
