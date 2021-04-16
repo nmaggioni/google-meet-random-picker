@@ -49,9 +49,12 @@ export class App extends React.Component {
   }
 
   getUser(user) {
+    /*
     let updatedUsers = this.state.users
     updatedUsers.push(user)
     this.setState({users: updatedUsers})
+    */
+    this.setState({users: [user]})
   }
 
   removeUser(key) {
@@ -73,8 +76,8 @@ export class App extends React.Component {
           >
             Random
           </Button>
+          <MessageContainer users={this.state.users} removeUser={this.removeUser} />
         </div>
-        <MessageContainer users={this.state.users} removeUser={this.removeUser} />
       </div>
     );
   }

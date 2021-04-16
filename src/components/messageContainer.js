@@ -8,7 +8,7 @@ export class MessageContainer extends React.Component {
     for (let i = 0; i < this.props.users.length; i++) {
       messages.push(<Message user={this.props.users[i]} key={i} id={i} removeUser={this.props.removeUser}/>)
     }
-    return (<div className="rp-message-container">
+    return (<div className="rp-message-container" style={{"display": "inline-block", "margin-left": "10px"}}>
       { messages }
     </div>)
   }
