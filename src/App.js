@@ -16,7 +16,12 @@ export class App extends React.Component {
   }
 
   randomUser() {
-    var usersHTML = document.querySelectorAll('[data-allocation-index]')
+    var usersHTML = document.querySelectorAll('[role=listitem]')
+
+    if (usersHTML.length === 0) {
+      alert('Open the participants list first');
+      return;
+    }
 
     class User {
       constructor(name, imageURL) {
@@ -29,9 +34,9 @@ export class App extends React.Component {
     
     for (let i = 0; i < usersHTML.length; i++) {
       try {
-        let name = usersHTML[i].childNodes[1].childNodes[0].childNodes[2].innerHTML;
+        let name = usersHTML[i].childNodes[0].childNodes[1].innerText.replace('\n', ' ');
         if (name.length < 50) {
-          users.push(new User(usersHTML[i].childNodes[1].childNodes[0].childNodes[2].innerHTML, usersHTML[i].childNodes[0].childNodes[0].childNodes[0].childNodes[2].src))
+          users.push(new User(name, usersHTML[i].childNodes[0].childNodes[0].src))
         }
       }
       catch(err) {
